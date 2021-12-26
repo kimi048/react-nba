@@ -25,7 +25,7 @@ class Teams extends Component{
   renderList = (filtered) => (
     filtered.map((item, index) => (
       <CSSTransition key={index} timeout={500} classNames="fade">
-        <Link className="team_item" to={`/team/${item.name}`}>
+        <Link className="team_item" to={`/teams/${item.name}`}>
           <img alt={item.name} src={`/images/teams/${item.logo}`} />
         </Link>
       </CSSTransition>
